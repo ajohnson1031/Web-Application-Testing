@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: "digi";
+  src: url("../fonts/digital-7-webfont.woff2") format("woff2"), url("../fonts/digital-7-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cak";
+  src: url("../fonts/cherryandkissespersonaluse-e2w4-webfont.woff2") format("woff2"), url("../fonts/cherryandkissespersonaluse-e2w4-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.main-wrapper {
+  min-width: 833px;
+  height: auto;
+  padding: 25px;
+  background-color: green;
+}
+.main-wrapper .inner-wrapper {
+  border: 15px solid white;
+}
+.main-wrapper .inner-wrapper .header {
+  text-align: center;
+  border-bottom: 12px solid white;
+  padding: 25px;
+}
+.main-wrapper .inner-wrapper .header h1 {
+  font-family: "cak";
+  font-size: 3rem;
+  color: white;
+  text-decoration: underline;
+}
+.main-wrapper .inner-wrapper .display {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+.main-wrapper .inner-wrapper .display .counter {
+  padding: 25px;
+  text-align: center;
+  background-color: black;
+}
+.main-wrapper .inner-wrapper .display .counter h2 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+.main-wrapper .inner-wrapper .display .counter p {
+  font-family: "digi";
+  font-size: 4rem;
+  margin-top: 25px;
+  color: goldenrod;
+}
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 25px;
+}
+.dashboard button {
+  width: fit-content;
+  border: 2px solid white;
+  padding: 8px 20px;
+  background-color: maroon;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Display from "./components/Display";
 function App() {
   return (
     <div className="App">
@@ -8,6 +8,7 @@ function App() {
           <div className="header">
             <h1>Lambda League</h1>
           </div>
+          <Display />
         </div>
       </div>
     </div>

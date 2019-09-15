@@ -1,4 +1,5 @@
 import React from "react";
+import { handleBallTest } from "./helpers";
 
 const DashBoard = ({
   balls,
@@ -15,6 +16,8 @@ const DashBoard = ({
     if (balls >= 3) {
       setBalls(0);
       setHits(Number(hits) + 1);
+      setStrikes(0);
+      setFouls(0);
     } else setBalls(Number(balls) + 1);
   };
   const handleStrikeClick = e => {
@@ -22,6 +25,8 @@ const DashBoard = ({
     if (strikes >= 2) {
       setStrikes(0);
       setFouls(0);
+      setBalls(0);
+      setHits(0);
     } else setStrikes(Number(strikes) + 1);
   };
   const handleFoulClick = e => {
@@ -35,6 +40,9 @@ const DashBoard = ({
   };
   const handleHitClick = e => {
     e.preventDefault();
+    setBalls(0);
+    setStrikes(0);
+    setFouls(0);
     setHits(Number(hits) + 1);
   };
   return (
